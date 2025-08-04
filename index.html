@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Login</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- This is the login section that will be displayed initially. -->
+  <div class="login-box">
+    <h2>Student Login</h2>
+    <input type="text" id="username" placeholder="Username" />
+    <input type="password" id="password" placeholder="Password" />
+    <button onclick="login()">Login</button>
+  </div>
+
+  <!-- This is the profile section, which is hidden by default. -->
+  <div class="profile-box" id="profileSection" style="display:none;">
+    <h2>Welcome, <span id="displayUsername"></span></h2>
+    <img id="profilePic" src="default.png" alt="Profile" />
+    <input type="file" id="uploadPic" accept="image/*" onchange="previewImage()" />
+    <button onclick="logout()">Logout</button>
+  </div>
+
+  <!-- This links to the JavaScript file that will handle the login and profile functionality. -->
+  <script src="script.js"></script>
+</body>
+</html>

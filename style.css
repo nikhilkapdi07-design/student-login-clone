@@ -1,0 +1,40 @@
+/* Basic styling for the body */
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Styles for the login and profile boxes */
+.login-box, .profile-box {
+  background: white;
+  display: inline-block;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px gray;
+}
+
+/* Styles for all input fields */
+input {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 80%;
+}
+
+/* Styles for all buttons */
+button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* Styles for the profile picture image */
+img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-top: 10px;
+  object-fit: cover;
+}
